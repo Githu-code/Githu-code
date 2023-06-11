@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Highline Car Dealership</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .navbar {
+      background-color: #FF9800;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .navbar li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+    .carousel {
+      max-width: 100%;
+      height: 400px;
+      background-color: #f5f5f5;
+    }
+    
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .product-item {
+      width: 250px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    
+    .product-image {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .product-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    .product-price {
+      color: #FF9800;
+      margin-top: 5px;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="logo">Highline Car Dealership</h1>
+  </div>
+  
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Inventory</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Online Store with Carousel</title>
+  <style>
+    .carousel {
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #ccc;
+    }
+    
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    @keyframes carAnimation {
+      0% {
+        transform: translateX(-100%);
+      }
+      
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    
+    .moving-car {
+      animation: carAnimation 4s linear infinite;
+    }
+    
+    .road {
+      background-color: #888;
+      height: 100px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+     <div class="carousel">
+    <img src="https://photos.app.goo.gl/yZnfidPaQQayjxQd7" class="moving-car" alt="Discovery 5">
+    <img src="https://photos.app.goo.gl/oCeFrZo5Vc6e59iJ6" alt="Mercedes-Benz E350">
+    <img src="https://photos.app.goo.gl/mJxeLCZr7ww2z4qr7" alt="Mercedes-Benz E350">
+  </div>
+  <div class="road"></div>
+  <script>
+   
+<head>
+  <title>Online Store with Carousel</title>
+  <style>
+    .carousel {
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #ccc;
+    }
+    
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    @keyframes carAnimation {
+      0% {
+        transform: translateX(-100%);
+      }
+      
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    
+    .moving-car {
+      animation: carAnimation 4s linear infinite;
+    }
+    
+    .road {
+      background-color: #888;
+      height: 100px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <img src="https://photos.app.goo.gl/yZnfidPaQQayjxQd7" class="moving-car" alt="Discovery 5">
+    <img src="https://photos.app.goo.gl/oCeFrZo5Vc6e59iJ6" alt="Mercedes-Benz E350">
+    <img src="https://photos.app.goo.gl/mJxeLCZr7ww2z4qr7" alt="Mercedes-Benz E350">
+  </div>
+  <div class="road"></div>
+  
+  <script>
+    // JavaScript code
+    var carousel = document.querySelector('.carousel');
+    var carImages = carousel.querySelectorAll('img');
+
+    var currentIndex = 0;
+    var totalImages = carImages.length;
+
+    function moveCarousel() {
+      carImages[currentIndex].classList.remove('moving-car');
+      currentIndex = (currentIndex + 1) % totalImages;
+      carImages[currentIndex].classList.add('moving-car');
+    }
+
+    setInterval(moveCarousel, 4000); // Change image every 2 seconds
+  </script>
+
+
+
+  
+  
+  <div class="carousel">
+    <body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .navbar {
+      background-color: #FF9800;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .navbar li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+    .carousel {
+      max-width: 100%;
+      height: 400px;
+      background-color: #f5f5f5;
+      position: relative;
+    }
+	<br>
+	
+	
+<head>
+  <title>Active User Counter</title>
+  <script>
+    // Initialize the counter variable
+    var counter = 0;
+
+    // Function to increment the counter and update the display
+    function incrementCounter() {
+      counter++;
+      document.getElementById("counterDisplay").innerHTML = counter;
+    }
+  </script>
+</head>
+<body>
+  <h1>Active User Counter</h1>
+  <p>Number of users: <span id="counterDisplay">0</span></p>
+  <button onclick="incrementCounter()">Increment</button>
+</body></br>
+
+
+
+<head style="background-color: purple "<b> HOT DEALS</b>
+  <title><b>HOT DEALS</b></title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://
+	  <style>
+    /* Reduce the size of the carousel container */
+    #myCarousel {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Reduce the size of the carousel images */
+    #myCarousel .item img {
+      max-height: 300px;
+      width: auto;
+      margin: 0 auto;
+    }
+  </style>maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+ <a>     <img src="https://photos.app.goo.gl/oCeFrZo5Vc6e59iJ6">
+      <div class="Product-caption">
+        <h3></h3>
+        <p>Mercedes-Benz E350<br>AMG Body kit<br> price=Ksh 2,450,000</p></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <a><img src= "https://photos.app.goo.gl/mJxeLCZr7ww2z4qr7"   alt="Mercedes-Benz E350">
+      <div class="carousel-caption">
+        <h3>Image 2</h3>
+        <p>Mercedes-Benz E350<br>YOM 2014<br>2,700,000.</a></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://photos.app.goo.gl/yZnfidPaQQayjxQd7" alt="1=Discovery 5">
+      <div class="carousel-caption">
+        <h3>Image 3</h3>
+        <p>Discovery 5 <br>YOM 2018 <br> price 12.5M</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Add Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+  <head>
+  <meta charset="UTF-8">
+  <title>Search Bar with Purple Background</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .search-bar {
+      background-color: purple;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .search-input {
+      width: 300px;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    .search-button {
+      padding: 8px 12px;
+      background-color: #fff;
+      border: none;
+      border-radius: 4px;
+      margin-left: 8px;
+      cursor: pointer;
+      color: purple;
+      font-size: 16px;
+    }
+    
+    .search-button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="search-button">Search</button>
+  </div>
+<h2>Find Your Dream Car</h2>
+     <br>   <p>Explore our wide selection of high-quality vehicles</p>
+        <a href="#" class="cta-button">View Inventory</a> </br>
+    </section>
+	
+  <section >
+  <div class="product-list">
+	<br><h1>Cars</h1></br>
+  <br>  <div class="product-item">
+   <img src="https://photos.app.goo.gl/2Pg6WtFjBaBbWMbUA" alt Mitsubishi outlander"
+      <h2 class="Mitsubishi outlander<br> YOM 2016">Mitsubishi Outlander</h2>
+      <p class="product-price">$ABC</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div></br>
+    <div class="product-item">
+      <img src=<!--    -->alt=<!--      -->
+      <h2 class="product-title">Car 2</h2>
+      <p class="product-price">$ABC</p>
+		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+      <div class="product-item">
+      <img src="car2.jpg" alt="Car 2" class="product-image">
+   <h3 class="product-title">Car 3</h3>
+      <p class="product-price">$15,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="car2.jpg" alt="Car 2" class="product-image">
+      <h2 class="product-title">Car 2</h2>
+      <p class="product-price">$15,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+
+
+
+<head></b>
+  <title></title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://
+	  <style>
+    /* Reduce the size of the carousel container */
+    #myCarousel {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Reduce the size of the carousel images */
+    #myCarousel .item img {
+      max-height: 300px;
+      width: auto;
+      margin: 0 auto;
+    }
+  </style>maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="image1.jpg" width="500"height="600">
+      <div class="carousel-caption">
+        <h3>Image 1</h3>
+        <p>Description for Image 1</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="image2.jpg" alt="Image 2">
+      <div class="carousel-caption">
+        <h3>Image 2</h3>
+        <p>Description for Image 2</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="image3.jpg" alt="Image 3">
+      <div class="carousel-caption">
+        <h3>Image 3</h3>
+        <p>Description for Image 3</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Add Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="image1.jpg" alt="Image 1">
+      <div class="carousel-caption">
+        <h3>Image 1</h3>
+        <p>Description for Image 1</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="image2.jpg" alt="Image 2">
+      <div class="carousel-caption">
+        <h3>Image 2</h3>
+        <p>Description for Image 2</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="image3.jpg" alt="Image 3">
+      <div class="carousel-caption">
+        <h3>Image 3</h3>
+        <p>Description for Image 3</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between flex items */
+  }
+  
+  .flex-item {
+    margin-right: 10px; /* Add margin to create spacing between flex items */
+  }
+</style>
+
+<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+  <div class="flex-item">Item 3</div>
+</div>
+
+
+<!-- Add Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+	
+
+	 <div class="product-item">
+      <img src="https://photos.app.goo.gl/2Pg6WtFjBaBbWMbUA " alt="Mitsubishioutlander" class="product-image">
+      <h2 class="Mitsubishi Outlander">Mitsubishi Outlander</h2>
+      <p class="product-price">2.95M</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/m7xA4bbr6VBfZuxRA">
+      <h2 class="product-title">Toyota Premio</h2>
+      <p class="product-price">Ksh 690,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/BosUAvnyR6FgFGFj8" alt="Toyota Rav4" class="product-image">
+      <h2 class="product-title">Toyota Rav4</h2>
+      <p class="product-price">Ksh 4,960,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/kQrMWueeXuEj32nJ6" alt="Subaru forester" class="product-image">
+      <h2 class="product-title">Subaru Forester</h2>
+      <p class="product-price">Ksh 580,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/J6iD14nVBKXiSNf58" alt="Toyota Probox" class="product-image">
+      <h2 class="product-title">Toyota Probox</h2>
+      <p class="product-price">Ksh 540,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/aBL7FttFJytM4dr49" alt="Nissan X-trail" class="product-image">
+      <h2 class="product-title">Nissan X-trail</h2>
+      <p class="product-price">Ksh 1.95 M</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/rz5AGcFvkRXZR1XS8" alt="Toyota Axio" class="product-image">
+      <h2 class="product-title">Toyota axio</h2>
+      <p class="product-price">Ksh 990,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/SXdUSv5cAGc9VsDB8" alt="RAV 4" class="product-image">
+      <h2 class="product-title">RAV4</h2>
+      <p class="product-price">Ksh 990,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/QPGFSAdUWadDJJSd6" alt="Nissan B14" class="product-image">
+      <h2 class="product-title">Nissan B14</h2>
+      <p class="product-price">Ksh 229,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/GZZktyb2K8Fi7Lsh9" alt="Nissan tiida Latio" class="product-image">
+      <h2 class="product-title">Nissan Tiida</h2>
+      <p class="product-price">Ksh 550,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/usm7vT3r5XebSrVi8" alt="Toyota Porte" class="product-image">
+      <h2 class="product-title">Toyota Porte</h2>
+      <p class="product-price">Ksh 445,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/Uf9drQ32i31aPTBx7" alt="Subaru forester" class="product-image">
+      <h2 class="product-title">Subaru Forester</h2>
+      <p class="product-price">Ksh 850,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/iYJ2xyf28NfhGsFX7" alt="Toyota Fielder" class="product-image">
+      <h2 class="product-title">Toyota Fielder</h2>
+      <p class="product-price">Ksh 600,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/2cXkxjSpFXB63MoE8" alt="Isuzu D-max" class="product-image">
+      <h2 class="product-title">Isuzu D-max</h2>
+      <p class="product-price">Ksh 850,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/84WqEKKVbC6Sf3hE65" alt="Toyota Probox" class="product-image">
+      <h2 class="product-title">Toyota Probox</h2>
+      <p class="product-price">Ksh 500,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+    
+	  <div class="product-item">
+      <img src="https://photos.app.goo.gl/HB4PDAJFizwMPdwc8" alt="Toyota Ractis" class="product-image">
+      <h2 class="product-title">Toyota Ractis</h2>
+      <p class="product-price">$Ksk 550,000</p>
+		  		<a>  View details <br></a>
+		  <a>contact seller</br>    </div></a>
+    </div>
+	
+	
+	
+	</section>
+<!--                   -->
+<main style="color:blue;">
+    <section>
+      <h2>About Us</h2>
+      <p>Welcome to our car dealership! We pride ourselves on providing top-quality vehicles and outstanding customer service. We understand that purchasing a car can be a big decision, and that's why we strive to make the process as smooth and hassle-free as possible. Our knowledgeable and friendly staff are here to answer any questions you may have and help you find the perfect car to fit your needs and budget. From browsing our wide selection of new and pre-owned vehicles to finalizing your purchase, our team is dedicated to making your experience a positive one. Thank you for choosing us and we look forward to serving you!</p>
+    </section>
+    
+    <section>
+      <h2>Services</h2>
+      <ol>
+		  As a car dealership, we offer a range of services to help you find and maintain your vehicle. Some of these services include:
+
+<li><b>Sales of new and pre-owned vehicles</b> : We offer a variety of cars to choose from, including new, certified pre-owned, and used cars that are thoroughly inspected and serviced to ensure top quality.</li>
+
+<li><b>Financing options: </b>We work with multiple lenders to provide customized financing options that best suit your budget and needs.</li>
+
+<li><b>Trade-ins:</b> We provide a hassle-free trade-in process to help you part with your old car and upgrade to a newer one.</li>
+
+<li><b>Vehicle maintenance and repairs:</b> Our service center is equipped with state-of-the-art tools and staffed by experienced technicians who provide a range of maintenance and repair services to keep your car running smoothly.</li>
+
+<li><b>Genuine parts and accessories: </b>We stock a wide range of genuine parts and accessories manufactured by the car manufacturer. </li>
+
+<p>Our main goal is to provide our clients with exceptional service and an enjoyable experience throughout their ownership of their vehicle.</p>
+      </ol>
+    </section>
+	<section >
+		<section>
+  <h2>Contact Us</h2>
+  <form action="/submit-contact" method="POST">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+<section>
+  <h2>Contact Information</h2>
+  <ol>
+    <li>Email: <a href=<!--         -->jgithu87@gmail.com</a></li>
+    <li>Phone: <br>0727360967</br>
+		                 <br> 0710450036</br>
+						 <br  0706165267</br></li>
+    <li>Address: Nandi Road, Eldoret, Kenya</li>
+  </ol>
+</section>
+		  </main>
+  
+  <footer style="background-color:powderblue;">
+    <p>&copy; 2023 HIGHLINECARDEALERSHIP. All rights reserved.</p>
+  </footer>
